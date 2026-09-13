@@ -12,10 +12,21 @@ export default {
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
-      '2xl': '1536px',
+      '2xl': '1440px',
     },
     extend: {
       colors: {
+        brand: {
+          emerald: '#10b981',
+          teal: '#14b8a6',
+          sky: '#0284c7',
+          indigo: '#6366f1',
+          purple: '#8b5cf6',
+          rose: '#f43f5e',
+          amber: '#f59e0b',
+          dark: '#0b0f19',
+          card: '#111827',
+        },
         primary: {
           50: '#ecfdf5',
           100: '#d1fae5',
@@ -29,19 +40,20 @@ export default {
           900: '#064e3b',
           950: '#022c22',
         },
-        brand: {
-          blue: '#2563eb',
-          purple: '#7c3aed',
-          amber: '#f59e0b',
-          rose: '#f43f5e',
-        }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       boxShadow: {
-        'card': '0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
-        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04)',
+        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
+        'card': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+        'glow': '0 0 25px -5px rgba(16, 185, 129, 0.3)',
+        'glow-sky': '0 0 25px -5px rgba(2, 132, 199, 0.3)',
+      },
+      borderRadius: {
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+        '4xl': '2rem',
       }
     },
   },
